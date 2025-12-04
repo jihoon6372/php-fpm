@@ -4,6 +4,9 @@ services:
   php:
     image: jihoon6372/php:8.4-fpm
     platform: linux/amd64
+    build: 
+      context: ./php
+      dockerfile: Dockerfile
     restart: always
     ports:
       - "9000:9000"
